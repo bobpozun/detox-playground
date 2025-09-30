@@ -1,0 +1,4 @@
+# ShellCheck configuration
+# Ignore environment files
+exclude-dir=.env*
+exclude-dir=*.env

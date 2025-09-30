@@ -1,0 +1,18 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "testRunner": "jest-circus/runner",
+  "testTimeout": 120000,
+  "verbose": true,
+  "setupFilesAfterEnv": ["<rootDir>/utils/jest-setup.ts"],
+  "maxWorkers": 1,
+  "coverageDirectory": "<rootDir>/coverage",
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
+  "transform": {
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  },
+  "roots": ["<rootDir>/tests/simple_qa_react_app"],
+  "testMatch": ["<rootDir>/tests/simple_qa_react_app/*.test.ts"],
+  "snapshotSerializers": [],
+  "reporters": ["detox/runners/jest/reporter"]
+}
